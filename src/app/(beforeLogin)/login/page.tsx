@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import MainPage from "../_component/MainPage";
 
-const Login = () => redirect("/i/flow/login");
+const Home = () => <MainPage />;
 
-export default Login;
+export default Home;
