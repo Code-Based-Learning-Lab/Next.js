@@ -2,6 +2,8 @@ import styles from "@/app/(afterLogin)/layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import zLogo from "@/../public/zlogo.png";
+import NavMenu from "./_component/NavMenu";
+import LogoutButton from "./_component/LogoutButton";
 
 interface AfterLoginLayoutProps {
   children: React.ReactNode;
@@ -17,6 +19,15 @@ const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => (
               <Image src={zLogo} alt="z.com logo" width={40} height={40} />
             </div>
           </Link>
+          <nav>
+            <ul>
+              <NavMenu />
+              <Link href="/componse/tweet" className={styles.postButton}>
+                게시하기
+              </Link>
+            </ul>
+          </nav>
+          <LogoutButton />
         </div>
       </section>
     </header>

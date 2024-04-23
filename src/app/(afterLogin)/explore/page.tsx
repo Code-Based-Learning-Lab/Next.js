@@ -1,3 +1,3 @@
-const ExplorePage = () => <main>탐색</main>;
+const ExplorePage = () => <main>검색 페이지</main>;
 
 export default ExplorePage;
