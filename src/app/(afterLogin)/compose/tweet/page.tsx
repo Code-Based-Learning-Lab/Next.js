@@ -1,5 +1,3 @@
-const HomePage = () => {
-  return <main>게시글</main>;
-};
+const TweetPage = () => <main>게시글</main>;
 
-export default HomePage;
+export default TweetPage;

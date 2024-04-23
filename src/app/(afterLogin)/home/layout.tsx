@@ -1,7 +1,7 @@
-export default function HomeLayout({
-  children,
-}: {
+interface HomeLayoutProps {
   children: React.ReactNode;
-}) {
-  return <div>{children}</div>;
 }
+
+const HomeLayout = ({ children }: HomeLayoutProps) => <div>{children}</div>;
+
+export default HomeLayout;

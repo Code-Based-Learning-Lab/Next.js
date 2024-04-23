@@ -1,10 +1,12 @@
-const AfterLoginLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div>
-      After Login Layout
-      <div>{children}</div>
-    </div>
-  );
-};
+interface AfterLoginLayoutProps {
+  children: React.ReactNode;
+}
+
+const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => (
+  <div>
+    After Login Layout
+    <div>{children}</div>
+  </div>
+);
 
 export default AfterLoginLayout;

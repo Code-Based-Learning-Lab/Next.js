@@ -1,5 +1,3 @@
-const MessagesPage = () => {
-  return <main>쪽지 페이지</main>;
-};
+const MessagesPage = () => <main>쪽지 페이지</main>;
 
 export default MessagesPage;

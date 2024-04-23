@@ -1,5 +1,3 @@
-const LoginPage = () => {
-  return <main>로그인 모달</main>;
-};
+const LoginPage = () => <main>로그인 모달</main>;
 
 export default LoginPage;
