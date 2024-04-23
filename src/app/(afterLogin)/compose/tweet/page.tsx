@@ -1,3 +1,5 @@
-const TweetPage = () => <main>게시글</main>;
+import HomePage from "../../home/page";
+
+const TweetPage = () => <HomePage />;
 
 export default TweetPage;

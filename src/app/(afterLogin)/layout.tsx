@@ -6,12 +6,14 @@ import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import TrendSection from "./_component/TrendSection";
 import FollowRecommend from "./_component/FollowRecommend";
+import { ReactNode } from "react";
 
 interface AfterLoginLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
+  modal: ReactNode;
 }
 
-const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => (
+const AfterLoginLayout = ({ children, modal }: AfterLoginLayoutProps) => (
   <div className={styles.container}>
     <header className={styles.leftSectionWrapper}>
       <section className={styles.leftSection}>
@@ -24,7 +26,7 @@ const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => (
           <nav>
             <ul>
               <NavMenu />
-              <Link href="/componse/tweet" className={styles.postButton}>
+              <Link href="/compose/tweet" className={styles.postButton}>
                 게시하기
               </Link>
             </ul>
@@ -57,6 +59,7 @@ const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => (
         </section>
       </div>
     </div>
+    {modal}
   </div>
 );
 
