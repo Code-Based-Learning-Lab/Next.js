@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./main.module.css"; // Import the 'styles' module
 import Link from "next/link";
-import zLogo from "@/../public/zLogo.png";
+import zLogo from "@/../public/z-logo.png";
 
 const MainPage = () => {
   return (
