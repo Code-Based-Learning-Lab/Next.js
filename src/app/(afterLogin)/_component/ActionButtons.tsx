@@ -1,16 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import style from "./post.module.css";
 import cx from "classnames";
 
 const ActionButtons = () => {
-  const commented = true;
-  const reposted = true;
-  const liked = false;
+  const [commented, setCommented] = useState<boolean>(true);
+  const [reposted, setReposted] = useState<boolean>(true);
+  const [liked, setLiked] = useState<boolean>(true);
 
-  const onClickComment = () => {};
-  const onClickRepost = () => {};
-  const onClickHeart = () => {};
+  const onClickComment = () => setCommented((prev) => !prev);
+  const onClickRepost = () => setReposted((prev) => !prev);
+  const onClickHeart = () => setLiked((prev) => !prev);
 
   return (
     <div className={style.actionButtons}>
@@ -44,7 +45,7 @@ const ActionButtons = () => {
             </g>
           </svg>
         </button>
-        <div className={style.count}>{0 || ""}</div>
+        <div className={style.count}>{1 || ""}</div>
       </div>
     </div>
   );
