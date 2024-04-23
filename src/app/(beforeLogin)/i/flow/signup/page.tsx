@@ -1,3 +1,3 @@
-const SignUpPage = () => <main>회원가입모달</main>;
+const SignUpModal = () => <main>SignUp Modal</main>;
 
-export default SignUpPage;
+export default SignUpModal;

@@ -1,3 +1,3 @@
-const LoginPage = () => <main>로그인 모달</main>;
+const LoginModal = () => <main>Login Modal</main>;
 
-export default LoginPage;
+export default LoginModal;
