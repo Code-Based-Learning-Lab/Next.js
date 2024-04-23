@@ -1,3 +1,10 @@
-const HomePage = () => <main>홈페이지</main>;
+import Tab from "./_component/Tab";
+import styles from "./home.module.css";
+
+const HomePage = () => (
+  <main className={styles.main}>
+    <Tab />
+  </main>
+);
 
 export default HomePage;
