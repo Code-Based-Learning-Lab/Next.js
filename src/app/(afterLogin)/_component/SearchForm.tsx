@@ -1,6 +1,10 @@
 import styles from "@/app/(afterLogin)/_component/right-search-zone.module.css";
 
-const SearchForm = () => (
+interface SearchFormProps {
+  q?: string;
+}
+
+const SearchForm = ({ q }: SearchFormProps) => (
   <form className={styles.search}>
     <svg width={20} viewBox="0 0 24 24" aria-hidden="true">
       <g>
